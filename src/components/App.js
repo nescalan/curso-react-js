@@ -10,7 +10,6 @@ import NotFound from "../pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
-      <h1>This is Developer Branch</h1>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />

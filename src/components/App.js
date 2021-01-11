@@ -1,10 +1,17 @@
 import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import BadgeNew from "../pages/BadgeNew";
+import Badges from "../pages/Badges";
 
 function App() {
   return (
-    <div>
-      <h1>hola soy App</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/badges" component={Badges} />
+        <Route exact path="/badges/new" component={BadgeNew} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
